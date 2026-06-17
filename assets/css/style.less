@@ -1812,6 +1812,18 @@ section{
 			line-height: 1;
 		}
 	}
+	.accordion-button::after{
+		background-image: url('../img/icons/arrow-blue.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 40px 40px;
+		width: 40px;
+		height: 40px;
+		margin-left: auto;
+	}
+	.accordion-button:not(.collapsed)::after{
+		transform: rotate(180deg);
+	}
 }
 
 #application-guide{
@@ -2078,7 +2090,7 @@ section{
 	}
 	.application-guide__text--highlight{
 		color: #1A35A8;
-		font-family: @font-semibold;
+		font-family: @font-regular;
 		margin-bottom: 0;
 	}
 	.application-guide__orange{
@@ -2097,11 +2109,22 @@ section{
 	.application-guide__type2-text{
 		margin: 0;
 		color: #1d1d22;
-		font-family: @font-regular;
+		font-family: @font-semibold;
 		font-size: 16px;
 		line-height: 150%;
 		+ .application-guide__type2-text{
 			margin-top: 18px;
+		}
+	}
+	#collapseSteps2{
+		.application-guide__type2-text,
+		.application-guide__list-title,
+		.application-guide__list,
+		.application-guide__list li{
+			//font-family: @font-semibold;
+		}
+		.application-guide__list li{
+			font-size: 18px;
 		}
 	}
 	.application-guide__priorities{
@@ -2301,7 +2324,7 @@ section{
 	}
 	.application-guide__two-cols{
 		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
+		grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
 		gap: 18px;
 		margin-bottom: 18px;
 	}
@@ -2325,7 +2348,8 @@ section{
 	.application-guide__priority-controls{
 		display: flex;
 		gap: 14px;
-		padding-top: 14px;
+		padding-top: 16px;
+		margin-top: 16px;
 		border-top: 1px solid #EEF1F8;
 	}
 	.application-guide__priority-control{
@@ -2349,7 +2373,8 @@ section{
 		line-height: 1;
 	}
 	.application-guide__priority-deadlines{
-		padding-top: 14px;
+		margin-top: 16px;
+		padding: 16px 0;
 		border-top: 1px solid #EEF1F8;
 		display: grid;
 		gap: 16px;
@@ -2502,17 +2527,18 @@ section{
 		position: absolute;
 		right: 0;
 		top: 50%;
-		width: 12px;
-		height: 12px;
+		width: 40px;
+		height: 40px;
 		margin-left: 0;
-		background-image: none;
-		border-right: 2px solid #f56530;
-		border-bottom: 2px solid #f56530;
-		transform: translateY(-50%) rotate(45deg);
-		transform-origin: center;
+		background-image: url('../img/icons/arrow-orange.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 40px 40px;
+		transform: translateY(-50%);
+		transition: transform 0.2s ease;
 	}
 	.accordion-block .accordion .accordion-item .inner-accordion__top:not(.collapsed)::after{
-		transform: translateY(-50%) rotate(-135deg);
+		transform: translateY(-50%) rotate(180deg);
 	}
 	.inner-accordion__content{
 		margin-top: 18px;
