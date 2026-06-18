@@ -6,7 +6,7 @@
 @menu-color: #FFFFFF;
 @text-color: #FFFFFF;
 @btn-color: #F56530;
- 
+
 
 @font-regular: 'Montserrat Regular', sans-serif;
 @font-medium: 'Montserrat Medium', sans-serif;
@@ -18,9 +18,9 @@
 @font-black-italic: 'Montserrat Black Italic', sans-serif;
 
 body {
-    font-family: @font-regular;
-    font-size: 18px;
-    color: #1E1E1E;
+	font-family: @font-regular;
+	font-size: 18px;
+	color: #1E1E1E;
 	background-color: @background-color;
 
 	.container{
@@ -207,7 +207,7 @@ section{
 			margin-bottom: 40px;
 			@media(max-width: 992px){
 				font-size: 40px;
-				margin-bottom: 32px;	
+				margin-bottom: 32px;
 			}
 		}
 		&-sub-text {
@@ -540,7 +540,6 @@ section{
 		}
 	}
 }
-
 
 
 .icon-metro{
@@ -1706,36 +1705,36 @@ section{
 		.application-guide--blue{
 			color: #1A35A8;
 		}
-	@media(max-width: 768px){
-		.element-block{
-			padding: 16px;
+		@media(max-width: 768px){
+			.element-block{
+				padding: 16px;
+			}
+			.application-guide__date-card{
+				width: 100%;
+				max-width: none;
+				//margin-left: calc(50% - 50vw + 12px);
+				//margin-right: calc(50% - 50vw + 12px);
+				padding: 18px 16px;
+				display: grid;
+				grid-template-columns: 72px minmax(0, 1fr);
+				align-items: center;
+				column-gap: 16px;
+			}
+			.application-guide__date-card-icon{
+				grid-row: 1 / span 2;
+				width: 72px;
+				height: 72px;
+				margin: 0;
+			}
+			.application-guide__date-card-title{
+				margin: 0;
+				text-align: left;
+			}
+			.application-guide__date-card-text{
+				margin-top: 8px;
+				text-align: left;
+			}
 		}
-		.application-guide__date-card{
-			width: 100%;
-			max-width: none;
-			//margin-left: calc(50% - 50vw + 12px);
-			//margin-right: calc(50% - 50vw + 12px);
-			padding: 18px 16px;
-			display: grid;
-			grid-template-columns: 72px minmax(0, 1fr);
-			align-items: center;
-			column-gap: 16px;
-		}
-		.application-guide__date-card-icon{
-			grid-row: 1 / span 2;
-			width: 72px;
-			height: 72px;
-			margin: 0;
-		}
-		.application-guide__date-card-title{
-			margin: 0;
-			text-align: left;
-		}
-		.application-guide__date-card-text{
-			margin-top: 8px;
-			text-align: left;
-		}
-	}
 	}
 }
 
@@ -2935,7 +2934,13 @@ section{
 		.application-guide__type2-text{
 			font-size: 16px;
 		}
+		.application-guide__list-title{
+			font-size: 18px;
+		}
 		.application-guide__list li{
+			font-size: 16px;
+		}
+		#collapseSteps2 .application-guide__list li{
 			font-size: 16px;
 		}
 		.application-guide__info-card-text{
@@ -3192,5 +3197,5 @@ section{
 	}
 }
 
-@import "application-guide.less";
+//@import "application-guide.less";
 @import "video-list.less";
