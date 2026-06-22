@@ -999,48 +999,29 @@
 
     <section id="faq">
         <div class="title">Вопрос - ответ</div>
-        <div class="row">
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
-                <button class="btn active">Как подать<br> заявление</button>
-            </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
-                <button class="btn">Поступление лиц<br> с ОВЗ и инвалидностью</button>
-            </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
-                <button class="btn">Новый<br> федеральный закон</button>
-            </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
-                <button class="btn">Сроки подачи<br> заявления и зачисления</button>
-            </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
-                <button class="btn">Вступительные <br> испытания</button>
-            </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
-                <button class="btn">Документы<br> для зачисления</button>
-            </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
-                <button class="btn">Поступление в колледж <br> иностранных граждан</button>
-            </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
-                <button class="btn">Льготы и индивидуальные<br> достижения</button>
-            </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
-                <button class="btn">Практика, стажировки,<br>трудоустройство</button>
-            </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
-                <button class="btn">Целевое<br> обучение</button>
-            </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
-                <button class="btn">Поступление в ВУЗ<br> после колледжа</button>
-            </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
-                <button class="btn">Другие<br> вопросы</button>
-            </div>
+        <div class="faq-search">
+            <label for="faq_search">Поиск по ключевым словам</label>
+            <input id="faq_search" type="text" class="faq-search__input" placeholder="Ввести" aria-label="Поиск по ключевым словам">
         </div>
 
-        <div class="row">
-            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                <div class="accordion" id="accordionFAQ">
+        <div class="row faq-layout">
+            <div class="col-12 col-lg-3 faq-categories">
+                <button class="btn active">Как подать<br>заявление</button>
+                <button class="btn">Поступление лиц<br>с ОВЗ и инвалидностью</button>
+                <button class="btn">Новый<br>федеральный закон</button>
+                <button class="btn">Сроки подачи<br>заявления и зачисления</button>
+                <button class="btn">Вступительные<br>испытания</button>
+                <button class="btn">Документы<br>для зачисления</button>
+                <button class="btn">Поступление в колледж<br>иностранных граждан</button>
+                <button class="btn">Льготы и индивидуальные<br>достижения</button>
+                <button class="btn">Практика, стажировки,<br>трудоустройство</button>
+                <button class="btn">Целевое<br>обучение</button>
+                <button class="btn">Поступление в ВУЗ<br>после колледжа</button>
+                <button class="btn">Другие<br>вопросы</button>
+            </div>
+
+            <div class="col-12 col-lg-9">
+                <div class="accordion faq-accordion" id="accordionFAQ">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="heading1">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -1090,7 +1071,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
